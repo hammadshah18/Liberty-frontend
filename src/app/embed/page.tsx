@@ -26,7 +26,8 @@ export const metadata = {
 export default function EmbedPage() {
   return (
     <main className="min-h-screen bg-transparent">
-      <ChatWidget />
+      {/* ✅ embedMode=true hides the floating button */}
+      <ChatWidget embedMode={true} />
     </main>
   );
 }
